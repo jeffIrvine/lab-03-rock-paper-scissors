@@ -18,3 +18,24 @@ export function getRandomThrow() {
 
     return compThrow;
 }
+
+export function didUserWin(userChoice, compChoice) {
+    if (compChoice === 'rock' && userChoice === 'paper'){
+        return userWon;
+    }    
+    // else if (compChoice === 'rock' && userChoice === 'scissors'){
+    //     return 
+    // }
+    // else if (compChoice === 'scissors' && userChoice === 'paper'){
+
+    // }
+    // else if (compChoice === 'scissors' && userChoice === 'rock'){
+
+    // }
+    // else if (compChoice === 'paper' && userChoice === 'rock'){
+
+    // }
+    // else if (compChoice === 'paper' && userChoice === 'scissors'){
+
+    // };
+}

@@ -84,8 +84,6 @@ header img {
     height: var(--header-height);
 }
 
-
-
 content {
     width: 80%;
 }
@@ -93,7 +91,15 @@ content {
 p {
     margin: var(--gutter);
 }
-  
+
+input[type="radio"]:checked + img {
+    border: solid 3px #0047AB;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
 footer {
     position: fixed;
     width: 100%;

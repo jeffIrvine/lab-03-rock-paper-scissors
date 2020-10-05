@@ -21,28 +21,32 @@
     <main>
         <section class="main-section">
             <img class="main-logo" src="assets/alchemy-logo.png"/>
-            <h2>
-                Ro Sham Bo!
-            </h2>
+            <br>
 
-            <div>
-                <label>
-                    <input type="radio" name="weapon" value="rock" checked >
-                    <img src="assets/rock.png" alt="rock" width="100px">
-                </label>
+            
+            <Section class="buttons">
+                <h2>
+                    Ro Sham Bo!
+                </h2>
+                <br>
+                <div >
+                    <label>
+                        <input type="radio" name="weapon" value="rock" checked >
+                        <img src="assets/rock.png" alt="rock" width="100px">
+                    </label>
 
-                <label>
-                    <input type="radio" name="weapon" value="paper" >
-                    <img src="assets/paper.png" alt="paper" width="100px">
-                </label>
+                    <label>
+                        <input type="radio" name="weapon" value="paper" >
+                        <img src="assets/paper.png" alt="paper" width="100px">
+                    </label>
 
-                <label>
-                    <input type="radio" name="weapon" value="scissors" >
-                    <img src="assets/scissors.jpg" alt="scissors" width="100px">
-                </label>
-
-            </div>
-            <div>
+                    <label>
+                        <input type="radio" name="weapon" value="scissors" >
+                        <img src="assets/scissors.jpg" alt="scissors" width="100px">
+                    </label>
+                
+                </div>
+                <div>
                 <!-- <div>Result: <span id="throw-result"></span></div> -->
                 <div>Wins:<span id="win-span">0</span></div>
                 <div>Losses:<span id="loses-span">0</span></div>
@@ -50,6 +54,9 @@
             </div>
             <div>
                 <button id="shoot-button">Shoot</button>
+                <button id="reset-button">Reset</button>
+                <br>
+                <div >Number of Resets:<Span id="reset-span">0</Span></div>
             </div>
 
         </section>

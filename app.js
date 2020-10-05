@@ -6,6 +6,8 @@ const shootButton = document.querySelector('#shoot-button');
 const winSpan = document.querySelector('#win-span');
 const lossesSpan = document.querySelector('#loses-span');
 const drawSpan = document.querySelector('#draw-span');
+const resetButton = document.getElementById('reset-button');
+const numResetSpan = document.getElementById('reset-span');
 // const resultSpan = document.querySelector('#throw-result');
 // const resetButton = document.querySelector('#percent-span');
 
@@ -13,6 +15,7 @@ const drawSpan = document.querySelector('#draw-span');
 let numWins = 0;
 let numLosses = 0;
 let numDraws = 0;
+let numResets = 0;
 // let totalGames = 0;
 
 // event listener
@@ -39,4 +42,15 @@ shootButton.addEventListener('click', () => {
     drawSpan.textContent = numDraws;
 
 });
-// set event listeners to update state and DOM
+
+resetButton.addEventListener('click', () => {
+    numResets++;
+    numWins = 0;
+    numLosses = 0;
+    numDraws = 0;
+
+    winSpan.textContent = numWins;
+    lossesSpan.textContent = numLosses;
+    drawSpan.textContent = numDraws;
+    numResetSpan.textContent = numResets;
+});

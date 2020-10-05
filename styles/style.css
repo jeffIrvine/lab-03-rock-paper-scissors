@@ -1,10 +1,5 @@
 
 body {
-    --color1: #ffffff;
-    --color2: #ffffff;
-    --color3: #ffffff;
-    --color4: #ffffff;
-    --color5: #ffffff;
 
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
     /* --color1: hsla(349, 69%, 76%, 1);
@@ -72,14 +67,6 @@ h2 {
     font-weight: bold;
 }
 
-.gutter-right {
-    margin-right: 20px;
-}
-
-.main-logo {
-    animation: pulse 5s infinite ease-in-out;
-}
-
 header img {
     height: var(--header-height);
 }
@@ -93,7 +80,8 @@ p {
 }
 
 input[type="radio"]:checked + img {
-    border: solid 3px #0047AB;
+    border: solid 3px rebeccapurple;
+    border-radius: 5px;
 }
 
 input[type="radio"] {
@@ -111,3 +99,17 @@ footer {
     box-shadow: var(--shadow);
 }
   
+
+.gutter-right {
+    margin-right: 20px;
+}
+
+.main-logo {
+    animation: pulse 5s infinite ease-in-out;
+}
+.buttons {
+    border: solid 5px rebeccapurple;
+    background-color: lightblue;
+    border-radius: 25px;
+}
+
